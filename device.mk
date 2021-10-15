@@ -17,7 +17,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+   
 
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
@@ -55,8 +55,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc
 
 # PocketMode
-PRODUCT_PACKAGES += \
-    MotoPocketMode
+#PRODUCT_PACKAGES += \
+#    MotoPocketMode
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -74,6 +74,3 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.cedric
